@@ -17,9 +17,9 @@
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="index.jsp">메인</a> <!-- 메인으로 넘어간다 --></li>
-				<li><a href="about.jsp">우리에 대해</a> <!-- 어바웃으로 넘어간다 --></li>
-				<li><a href="./board.do?command=search">게시판</a> <!-- 게시판으로 넘어간다 --></li>
+				<li><a href="index.jsp">메인</a> <!--MainPageに移動する --></li>
+				<li><a href="about.jsp">우리에 대해</a> <!-- AboutPageに移動する --></li>
+				<li><a href="./board.do?command=search">게시판</a> <!-- 掲示板Pageに移動する --></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<jsp:useBean id="userid" class="java.lang.String" scope="session" />
@@ -50,13 +50,13 @@
 			</ul>
 		</div>
 	</nav>
-	<!--전반적 구성보여줌 -->
+	<!--全版的な構成を見せる -->
 	<div class="container">
 		<div class="row">
-			<form method="post" action="./board.do?command=save"> <!-- 글을 등록하게 하는 기능으로 보내는 버튼 -->
+			<form method="post" action="./board.do?command=save"> <!-- 文章を登録させる機能に送るButton -->
 				<table class="table table-striped"
 					style="text-align: center; border: ipx solid #dddddd">
-					<!-- 홀수와 짝수 구분하여 테이블 색상 변경 -->
+					<!-- Tableの色変更-->
 					<thead>
 						<tr>
 							<th colspan="2"
@@ -80,7 +80,7 @@
 					</tbody>
 				</table>
 						<input type="submit" class="btn btn-primary pull-right" value="글쓰기">
-						<!-- value= 함수값 -->
+						
 			</form>
 		</div>
 	</div>
