@@ -118,12 +118,12 @@ h1 {
 
 
 	<div class="container">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- アルバムを作る -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
 				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<!-- 동일한 아이디를 가져야 한다 -->
+				<!-- 同じIDを持ちなければならない -->
 
 			</ol>
 			<div class="carousel-inner">
