@@ -22,7 +22,7 @@ p {
 	src="https://d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- "검색" 단추를 누르면 팝업 레이어가 열리도록 설정한다 --> <script>
+<!-- "検索" Buttonを押す時PopUｐLayerが開かせる設定する--> <script>
 	$(function() {
 		$("#postcodify_search_button").postcodifyPopUp();
 	});
@@ -38,9 +38,9 @@ p {
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="index.jsp">메인</a> <!-- 메인으로 넘어간다 --></li>
-				<li><a href="about.jsp">우리에 대해</a> <!-- 어바웃으로 넘어간다 --></li>
-				<li><a href="./board.do?command=search">게시판</a> <!-- 게시판으로 넘어간다 --></li>
+				<li><a href="index.jsp">메인</a> <!-- MainPageに移動する--></li>
+				<li><a href="about.jsp">우리에 대해</a> <!-- AboutPageに移動する --></li>
+				<li><a href="./board.do?command=search">게시판</a> <!-- 掲示板Pageに移動する --></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<jsp:useBean id="userid" class="java.lang.String" scope="session" />
@@ -71,7 +71,7 @@ p {
 			</ul>
 		</div>
 	</nav>
-	<!--전반적 구성보여줌 -->
+	<!--全版的構成をみせる -->
 
 
 
