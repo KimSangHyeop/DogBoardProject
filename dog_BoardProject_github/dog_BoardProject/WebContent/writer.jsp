@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 	<mata name="viewport" content="width=device-width,initial-scale="1">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<title>게시판 글 등록</title>
+	<title>게시판 글 등록</title> <!--掲示板に文書を登録 -->
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -26,7 +26,7 @@
 				<%
 					if (userid.isEmpty()) {
 				%>
-					<li><a href="./Customer/login.jsp">로그인</a></li>
+					<li><a href="./Customer/login.jsp">로그인</a></li><!-- Login -->
 				<%
 					} else {
 				%>
@@ -38,12 +38,12 @@
 						
 						</button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<ul><a class="dropdown-item" href="Customer/loginCheck.jsp">회원 수정</a></ul>
-							 <ul><a class="dropdown-item" href="custo.do?command=delete&userid=<%=userid%>">회원 탈퇴</a></ul>
+							<ul><a class="dropdown-item" href="Customer/loginCheck.jsp">회원 수정</a></ul><!-- 会員修正 -->
+							 <ul><a class="dropdown-item" href="custo.do?command=delete&userid=<%=userid%>">회원 탈퇴</a></ul><!-- 会員脱退 -->
 						</div>
 					</div>
 				</li>
-				<li><a href="custo.do?command=logout">로그아웃</a></li>
+				<li><a href="custo.do?command=logout">로그아웃</a></li><!-- LogOut -->
 				<%
 					}
 				%>
@@ -84,7 +84,7 @@
 			</form>
 		</div>
 	</div>
-
+              <!-- 掲示板の様式を作る-->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="js/bootstrap.js"></script>
 </body>
