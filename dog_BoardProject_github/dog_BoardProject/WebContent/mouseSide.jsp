@@ -82,7 +82,7 @@ p {
 	<div class="container">
 		<div class="jumbotron">
 			<div class="container">
-				<h1>펫시팅 찾는 곳</h1>
+				<h1>펫시팅 찾는 곳</h1> <!--ネズミの飼い主を探すPage -->
 				<div
 					style="border: 1px solid white-space; padding: 3px; height: auto; min-height: 30px; overflow: auto;"></div>
 				<P>이곳에서 펫시팅을 할 수 있습니다.</P>
