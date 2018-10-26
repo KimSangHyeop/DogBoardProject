@@ -15,7 +15,7 @@ import board.Board;
 import board.BoardDao;
 
 @WebServlet("/board.do")
-public class BoardServlet extends HttpServlet {
+public class BoardServlet extends HttpServlet {　//掲示板の機能具現
 	private static final long serialVersionUID = 1L;
 	   
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -60,7 +60,7 @@ public class BoardServlet extends HttpServlet {
 	} // end doPost()
 
 	private void updateView(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int num = Integer.parseInt(request.getParameter("num"));
+		int num = Integer.parseInt(request.getParameter("num"));//掲示板の修正機能
 		
 		BoardDao bDao = new BoardDao();
 		Board b = new Board();
@@ -78,7 +78,7 @@ public class BoardServlet extends HttpServlet {
 
 	private void view(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int num = Integer.parseInt(request.getParameter("num"));
+		int num = Integer.parseInt(request.getParameter("num"));//掲示板の文書をUserが読む機能
 		String nextPage=null;
 		BoardDao bDao = new BoardDao();
 		Board b = new Board();
@@ -94,7 +94,7 @@ public class BoardServlet extends HttpServlet {
 		request.getRequestDispatcher(nextPage).forward(request, response);
 	}
 
-	private void save(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void save(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {//掲示板の貯蔵機能
 		
 		String write = request.getParameter("writer");
 		String title = request.getParameter("title");
@@ -119,8 +119,8 @@ public class BoardServlet extends HttpServlet {
 		
 	}
 	
-	private void search(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ArrayList<Board> bArr;
+	private void search(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {//掲示板の検索機能
+		ArrayList<Board> bArr;　
 		BoardDao bDao = new BoardDao();
 		String nextPage = null;
 		try {
@@ -134,7 +134,7 @@ public class BoardServlet extends HttpServlet {
 		request.getRequestDispatcher(nextPage).forward(request, response);
 	}
 	
-	private void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {//掲示板のUpdate機能
 		
 		int num = Integer.parseInt(request.getParameter("num"));
 		String title = request.getParameter("title");
@@ -158,7 +158,7 @@ public class BoardServlet extends HttpServlet {
 		request.getRequestDispatcher(nextPage).forward(request, response);
 		
 	}
-	private void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {//掲示板の削除機能
 		int num=Integer.parseInt(request.getParameter("num"));
 		BoardDao bDao = new BoardDao();
 		String nextPage = null;
