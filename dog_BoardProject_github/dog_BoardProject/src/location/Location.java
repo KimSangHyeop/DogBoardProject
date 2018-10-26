@@ -1,6 +1,6 @@
 package location;
 
-public class Location {
+public class Location { // Userの座標をDBに連動及び貯蔵
 	private String id;
 	private double lat;
 	private double lng;
