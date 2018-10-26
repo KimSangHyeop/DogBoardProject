@@ -1,4 +1,4 @@
-package customer;
+package customer; //会員管理
 
 public class Customer {
 	private String name;
@@ -27,7 +27,7 @@ public class Customer {
 		this.content = content;
 	}
 	
-	public String getName() {
+	public String getName() {//get set Method
 		return name;
 	}
 
