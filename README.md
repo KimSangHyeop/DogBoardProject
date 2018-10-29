@@ -1,0 +1,6 @@
+# DogBoardProject
+このProjectはPetsitterのWedSiteとしてPetSitterとPetOwnerを繋ぐWedSiteを作るProject。
+PetSitter及びPetOwnerは自身の情報をこのサイトに登録する。
+登録された情報はGoogle　Mapに連動する。
+USERが自身の住所をサイトを通じて検索すえば,近いにいるSitter/Ownerの情報がUSERに提供する。
+私が担当した分野はFrontEndとしてMainPage,LoginPage、掲示板PageなどのWedSiteの全版的な構成を担当する。
